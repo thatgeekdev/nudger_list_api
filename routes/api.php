@@ -73,4 +73,30 @@ Route::middleware('auth:sanctum')->group(function () {
         return response()->json($user, 200);
     });
 
+    /**
+ * @OA\Post(
+ *     path="/api/logout",
+ *     summary="Logout the authenticated user",
+ *     tags={"Auth"},
+ *     security={{"sanctum":{}}},
+ *     @OA\Response(
+ *         response=200,
+ *         description="Logged out successfully",
+ *         @OA\JsonContent(
+ *             @OA\Property(property="message", type="string", example="Logged out successfully")
+ *         )
+ *     ),
+ *     @OA\Response(
+ *         response=401,
+ *         description="Unauthorized"
+ *     )
+ * )
+ */
+
+    Route::post('/logout', function (Request $request) {
+        $request->user()->currentAccessToken()->delete();
+
+        return response()->json(['message' => 'Logged out successfully']);
+    });
+
 });
