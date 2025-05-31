@@ -105,6 +105,10 @@ Run the Laravel server and visit:
 ```
 http://localhost:8000/api/documentation
 ```
+AND SE MORE AND TEST:
+
+![Screenshot 2025-05-31 030633](https://github.com/user-attachments/assets/91d55c0d-ca4f-4461-9a57-6c1bb2692bc3)
+
 
 ### Example: Search Task
 
@@ -118,7 +122,7 @@ curl -X GET "http://localhost:8000/api/search/tasks/meeting" -H "accept: applica
 curl -X POST "http://localhost:8000/api/tasks" -H "accept: application/json" -H "Authorization: Bearer {your_token}" -H "Content-Type: application/json" -d '{"title":"Test task", "description":"Task description"}'
 ```
 
-### 🛠 Artisan Shortcuts
+### 🛠 Artisan Shortcuts if needed
 
 ```bash
 php artisan config:clear
@@ -127,6 +131,7 @@ php artisan cache:clear
 php artisan test
 ```
 
+
 ### 📄 License
 
-MIT
+MIT | thatgeekdev | Jose Jaime Matsimbe
