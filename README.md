@@ -2,9 +2,12 @@
 # 📝 Nudger List API
 
 This is a simple Laravel-based task management API using Sanctum for authentication with swagger documentation and  UI.
-```
+
+SEE MORE AND TEST:
+
 ![Screenshot 2025-05-31 030633](https://github.com/user-attachments/assets/91d55c0d-ca4f-4461-9a57-6c1bb2692bc3)
-```
+
+
 ## Requirements
 
 - PHP >= 8.1
